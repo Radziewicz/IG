@@ -1,0 +1,45 @@
+.header {
+    font-size: 25px;
+    text-align: center;
+    color: #2d2d2d;
+    @media only screen and (min-width: 880px) {
+        font-size: 50px;
+    }
+}
+
+.mission {
+    padding: 40px 0 70px 0;
+    @media only screen and (min-width: 880px) {
+        padding: 80px 0 160px 0;
+    }
+    &__element {
+        align-content: center;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 20px auto 30px;
+        grid-column-gap: 5px;
+        @media only screen and (min-width: 880px) {
+            grid-template-columns: auto 730px auto;
+        }
+        &__text {
+            padding-left: 10px;
+            justify-self: center;
+            font-size: 12px;
+            line-height: 2;
+            color: #565656;
+            @media only screen and (min-width: 880px) {
+                font-size: 16px;
+                padding-left: 30px;
+            }
+        }
+    }
+}
+
+.quote {
+    max-width: 15px;
+    height: auto;
+    justify-self: end;
+    @media only screen and (min-width: 880px) {
+        max-width: 35px;
+    }
+}

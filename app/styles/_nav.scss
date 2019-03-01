@@ -3,13 +3,14 @@
 .top-bar {
     max-width: 1100px;
     margin: 0 auto;
-    height: 100px;
+    height: 60px;
     align-items: center;
     display: grid;
     grid-template-columns: 70px auto;
     justify-content: space-between;
     @media only screen and (min-width: 880px) {
         grid-template-columns: 1fr 5fr 1fr;
+        height: 100px;
     }
     &__logo {
         justify-content: start;
