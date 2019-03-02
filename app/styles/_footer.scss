@@ -1,0 +1,14 @@
+.footer {
+    height: 90px;
+    background-color: #242424;
+    color: #8f8f8f;
+    font-size: 10px;
+    display: grid;
+    align-items: center;
+    &__wrapper {
+        width: 100%;
+        justify-content: start;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+}
