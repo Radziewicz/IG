@@ -6,31 +6,37 @@
     height: 60px;
     align-items: center;
     display: grid;
-    grid-template-columns: 70px auto;
+    grid-template-columns: 20px auto;
     justify-content: space-between;
+    font-family: 'Mada', sans-serif;
+    padding: 0 5%;
     @media only screen and (min-width: 880px) {
         grid-template-columns: 1fr 5fr 1fr;
         height: 100px;
     }
     &__logo {
         justify-content: start;
-        padding-right: 80px;
+        padding-right: 0;
+        @media only screen and (min-width: 880px) {
+            padding-right: 80px;
+        }
     }
     &__nav {
         text-align: center;
+        padding-left: 0;
         &__link {
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             padding: 5px 5px;
-            font-size: 9px;
+            font-size: 11px;
             height: 50px;
             border-right: 1px solid #fff;
             &:last-child {
                 border-right: none;
               }
               @media only screen and (min-width: 880px) {
-                font-size: 14px;
+                font-size: 12px;
                 padding: 10px 50px;
             }
         }

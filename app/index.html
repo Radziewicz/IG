@@ -9,6 +9,7 @@
     <!-- Place favicon.ico in the root directory -->
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Homenaje|Mada:300,400" rel="stylesheet">
     <!-- endbuild -->
     
     
@@ -40,10 +41,20 @@
         <!-- HERO -->
         <section class="hero">
           <h1 class="title"><span>Witamy</span> <br>Infinity-Group</h1>
+          <div class="callout">
+            <div class="callout-container">
+              <picture>
+                <source media="(min-width: 650px)" srcset="../images/cookies.png">
+                <img srcset="../images/cookies-sm.png" alt="" style="width:auto;">
+              </picture>
+              <p>We use own and third party cookies to improve our services and show ads related to your preferences by analyzing your browser habits . If you continue browsing , we consider you accept its use. You can switch the configuration or learn more <a href="/" class="cookies-link">here</a></p>
+              <span class="closebtn" onclick="this.parentElement.style.display='none';">close ×</span>
+            </div>
+          </div>
         </section>
       </div>
       <!-- MISSION -->
-      <section class="mission">
+      <!-- <section class="mission"> 
           <h2 class="header">Mission</h2>
             <div class="mission__element">
               <svg class="quote" version="1" xmlns="http://www.w3.org/2000/svg" width="37.333" height="30.667" viewBox="0 0 28 23"><path d="M2.8 1.1C1.6 1.7 1 3.3 1 5.6c0 2.7.5 3.7 2.5 4.6 3.2 1.4 3.2 3.3-.1 6.3C1.3 18.5 1 19.2 2 21l1.1 2.1 3-2.1C10 18.1 12 14 12 8.5c0-6.8-4.3-10.3-9.2-7.4zM18.8 1.1c-1.2.6-1.8 2.2-1.8 4.5 0 2.7.5 3.7 2.5 4.6 3.2 1.4 3.2 3.3-.1 6.3-2.1 2-2.4 2.7-1.4 4.5l1.1 2.1 3-2.1C26 18.1 28 14 28 8.5c0-6.8-4.3-10.3-9.2-7.4z"/></svg>
@@ -54,7 +65,7 @@
             </div>
         </section>
         <!-- CLIENTS -->
-        <section class="clients">
+        <!-- <section class="clients"> 
           <h2 class="header modifier">Clients</h2>
             <div class="slideshow-container">          
               <div class="mySlides fade">
