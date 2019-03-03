@@ -10,55 +10,89 @@
         height: auto;
     }
     &__text {
+      color: #3c3c3c;
+      font-family: 'Mada', sans-serif;
       margin-top: 50px;
-      font-size: 14px;
-      padding-bottom: 30px;
+      font-size: 16px;
+      padding-bottom: 25px;
       align-items: center;
+      line-height: 1.2;
       @media only screen and (min-width: 880px) {
         margin-top: 50px;
-        font-size: 22px;
-        padding-bottom: 30px;
+        font-size: 30px;
       }
     }
     &__mail {
-      font-size: 12px;
-      padding-bottom: 35px;
+      font-family: 'Mada', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      padding-bottom: 20px;
+      color: #3c3c3c;
       @media only screen and (min-width: 880px) {
-        font-size: 16px;
+        font-size: 22px;
+        padding-bottom: 35px;
       }
       a {
+        font-family: 'Mada', sans-serif;
+        font-weight: 300;
         color: #fff;
         text-decoration: underline;
+        font-size: 16px;
+        @media only screen and (min-width: 880px) {
+          font-size: 22px;
+        }
       }
     }
     &__btn {
+      font-family: 'Mada', sans-serif;
+      font-weight: 300;
       color: #fff;
       background-color: transparent;
       text-decoration: none;
       font-size: 12px;
-      padding: 5px 10px;
+      padding: 4px 8px;
       border: 1px solid #fff;
       text-align: center;
-    }
+      width: 70px;
+      @media only screen and (min-width: 880px) {
+        font-size: 15px;
+      }
+}
+
+.slide-element {
+  display: grid;
+  grid-template-columns: 20px auto;
+  grid-column-gap: 10px;
+  @media only screen and (min-width: 880px) {
+    grid-column-gap: 20px;
+  }
 }
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 930px;
     position: relative;
     margin: auto;
+    padding: 0 10% 0 5%;
+    @media only screen and (min-width: 880px) {
+      padding: 0;
+    }
   }
   
   
   /* The dots/bullets/indicators */
   .dot {
-    height: 15px;
-    width: 15px;
+    height: 7px;
+    width: 7px;
     margin: 0 2px;
     background-color: #add6b1;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    @media only screen and (min-width: 880px) {
+      height: 15px;
+      width: 15px;
+    }
   }
   
   .active {
@@ -82,9 +116,22 @@
     from {opacity: .4} 
     to {opacity: 1}
   }
+}
  
   .slide {
     display: grid;
-    grid-template-columns: 310px 15px auto 35px;
-    grid-column-gap: 10px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    @media only screen and (min-width: 880px) {
+      grid-template-columns: 350px auto;
+    }
+  }
+
+  .slide-img {
+    padding-top: 20px;
+    padding-right: 10%;
+    margin-bottom: -20px;
+    @media only screen and (min-width: 880px) {
+      padding-right: 0;
+    }
   }
