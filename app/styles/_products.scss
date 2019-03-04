@@ -5,7 +5,11 @@
     padding: 20px 0 40px 0;
     font-family: 'Mada', sans-serif;
     font-weight: 300;
-    @media only screen and (min-width: 880px) {
+    @media only screen and (min-width: 768px) {
+      font-size: 18px;
+      padding: 20px 0 60px 0;
+    } 
+    @media only screen and (min-width: 1024px) {
         font-size: 22px;
         padding: 40px 0 100px 0;
       }  
@@ -13,7 +17,7 @@
 
 .products {
     padding: 40px 10% 100px 5%;
-    @media only screen and (min-width: 880px) {
+    @media only screen and (min-width: 768px) {
         padding: 90px 0 155px 0;
       }  
     &__element {
@@ -25,13 +29,13 @@
             grid-template-columns: 1fr 1fr;
             grid-row-gap: 80px;
             grid-column-gap: 60px;
-            @media only screen and (min-width: 600px) {
+            @media only screen and (min-width: 768px) {
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-row-gap: 90px;  
                 grid-column-gap: 80px;
                 max-width: 500px;
               } 
-            @media only screen and (min-width: 880px) {
+            @media only screen and (min-width: 1024px) {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-row-gap: 90px;  
                 grid-column-gap: 80px;
@@ -42,9 +46,13 @@
                 align-self: center;
                 max-width: 90px;
                 max-height: 90px;
-                @media only screen and (min-width: 880px) {
-                    max-width: 140px;
-                    max-height: 140px;
+                @media only screen and (min-width: 768px) {
+                  max-width: 120px;
+                  max-height: 120px;
+                } 
+                @media only screen and (min-width: 1024px) {
+                    max-width: 120px;
+                    max-height: 120px;
                   }  
             }
         }

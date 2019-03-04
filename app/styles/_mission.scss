@@ -2,8 +2,8 @@
 
 .mission {
     padding: 40px 0 40px 0;
-    @media only screen and (min-width: 880px) {
-        padding: 80px 0 160px 0;
+    @media only screen and (min-width: 768px) {
+        padding: 80px 10% 160px 5%;
     }
     &__element {
         align-content: center;
@@ -11,7 +11,7 @@
         grid-template-columns: 20px auto;
         grid-column-gap: 5px;
         padding: 5% 15% 5% 5%;
-        @media only screen and (min-width: 880px) {
+        @media only screen and (min-width: 768px) {
             grid-template-columns: auto 730px auto;
             padding: 30px 0 0 0;
         }
@@ -23,9 +23,13 @@
             font-size: 12px;
             line-height: 2;
             color: #565656;
-            @media only screen and (min-width: 880px) {
-                font-size: 22px;
-                padding-left: 30px;
+            @media only screen and (min-width: 768px) {
+                font-size: 18px;
+                padding-right: 100px;
+                @media only screen and (min-width: 1024px) {
+                    padding-right: 0;
+                    font-size: 22px;
+                }
             }
         }
     }
@@ -35,7 +39,10 @@
     max-width: 15px;
     height: auto;
     justify-self: end;
-    @media only screen and (min-width: 880px) {
+    @media only screen and (min-width: 768px) {
+        max-width: 25px;
+    }
+    @media only screen and (min-width: 1024px) {
         max-width: 35px;
     }
 }
