@@ -86,6 +86,7 @@
 }
 
 .scroll-up {
+    cursor: pointer;
 	position: fixed;
 	bottom: 50px;
 	display: block;
@@ -121,6 +122,7 @@
 }
 
 .scroll-down {
+    cursor: pointer;
 	position: fixed;
 	right: 10px;
 	bottom: 35px;
