@@ -1,5 +1,5 @@
 .contact {
-    padding: 60px 5%;
+    padding: 60px 0 40px 5%;
     @media only screen and (min-width: 1024px) {
       padding: 85px 0;
     }
@@ -11,6 +11,7 @@
         margin: 0 auto; 
         justify-self: start; 
         padding-bottom: 30px;
+        padding-right: 5%;
         @media only screen and (min-width: 1024px) {
           grid-template-columns: 115px 265px;
           max-width: 980px;
@@ -51,6 +52,8 @@
     &__element {
       font-family: 'Mada', sans-serif;
       font-weight: 300;
+      display: grid;
+      grid-template-columns: 1fr auto;
         &__form {
           max-width: 770px;
           margin: 0 auto;
@@ -60,6 +63,7 @@
           grid-column-gap: 0;
           grid-row-gap: 10px;
           align-items: center;
+          padding-right: 5%;
           grid-template-areas: 
             "labelA inputA"
             "labelB inputB"
@@ -68,6 +72,7 @@
             "labelE labelE"
             "btn btn";
             @media only screen and (min-width: 1024px) {
+              padding-right: 0%;
               grid-template-columns: auto auto auto auto;
               grid-template-areas: 
                 "labelA inputA labelB inputB"
@@ -149,7 +154,6 @@
   .btn {
     grid-area: btn;
     width: 165px;
-    margin: 60px auto 0 auto;
     margin: 20px auto 0 auto;
     @media only screen and (min-width: 1024px) {
       margin: 60px auto 0 auto;

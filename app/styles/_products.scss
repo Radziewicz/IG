@@ -1,6 +1,6 @@
 
 .products {
-    padding: 40px 10% 100px 5%;
+    padding: 40px 10 100px 5%;
     @media only screen and (min-width: 768px) {
         padding: 90px 0 155px 0;
       } 
@@ -13,7 +13,7 @@
       font-weight: 300;
       @media only screen and (min-width: 768px) {
         font-size: 18px;
-        padding: 20px 0 60px 0;
+        padding: 20px 0 60px 50px;
       } 
       @media only screen and (min-width: 1024px) {
           font-size: 22px;
@@ -44,12 +44,16 @@
             &__item {
                 justify-self: center;
                 align-self: center;
-                max-width: 100px;
-                max-height: 100px;
+                max-width: 80px;
+                max-height: 80px;
                 padding: 10px;
                 &:hover {
                   background-color: #62c017;
                   fill: #fff;
+                  -webkit-animation-name: fade;
+                  -webkit-animation-duration: 1.2s;
+                  animation-name: fade;
+                  animation-duration: 1.2s;
                 }
                 @media only screen and (min-width: 768px) {
                   max-width: 120px;
@@ -73,9 +77,13 @@
   position: absolute;
   background-color: #62c017;
   z-index: 1;
-  width: 120px;
-  margin-top: -10px;
+  width: 100px;
+  margin-top: -7px;
   text-align: left;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.2s;
+  animation-name: fade;
+  animation-duration: 1.2s;
   @media only screen and (min-width: 768px) {
     width: 140px;
   } 
