@@ -1,7 +1,7 @@
 
 
 .mission {
-    padding: 40px 0 40px 5%;
+    padding: 0 0 40px 5%;
     @media only screen and (min-width: 768px) {
         padding: 80px 0 160px 5%;
     }
@@ -25,6 +25,7 @@
             font-size: 12px;
             line-height: 2;
             color: #565656;
+            padding-top: 20px;
             @media only screen and (min-width: 768px) {
                 font-size: 18px;
                 padding: 0 5%;

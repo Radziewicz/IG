@@ -34,12 +34,12 @@
             }
             &:hover {
               color: lightgrey;
+              transition: all 0.5s;
             }
         }
     }
     &__text {
       font-size: 14px;
-      max-width: 770px;
       margin: 0 auto;
       font-family: 'Mada', sans-serif;
       font-weight: 300;
@@ -47,6 +47,7 @@
       @media only screen and (min-width: 1024px) {
         padding-bottom: 50px;
         font-size: 22px;
+        max-width: 770px;
       }
     }
     &__element {
