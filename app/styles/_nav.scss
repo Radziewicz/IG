@@ -1,11 +1,12 @@
 .scrolled {
-    color: tomato;
+    background-color: rgba(0, 0, 0, 0.7);
 }
     
 .top-bar {
     width: 100%;
     top: 0;
     height: 60px;
+    z-index: 3;
     align-items: center;
     display: grid;
     grid-template-columns: 40px 1fr;
@@ -15,7 +16,7 @@
     position: fixed;
     @media only screen and (min-width: 768px) {
         grid-template-columns: 50px 1fr;
-        height: 100px;
+        height: 80px;
     }
     &__logo {
         justify-content: start;
