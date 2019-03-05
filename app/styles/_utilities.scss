@@ -1,7 +1,32 @@
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
+
+.quote {
+    max-width: 15px;
+    height: auto;
+    justify-self: end;
+    @media only screen and (min-width: 768px) {
+        max-width: 25px;
+    }
+    @media only screen and (min-width: 1024px) {
+        max-width: 35px;
+    }
+    &--modifier {
+        margin-top: 50px;
+    }
 }
+
+.header {
+    font-size: 32px;
+    text-align: center;
+    color: #2d2d2d;
+    font-family: 'Homenaje', sans-serif;
+    @media only screen and (min-width: 768px) {
+        font-size: 50px;
+    }
+    &--modifier {
+        color: #fff;
+    }
+}
+
 
 .position {
     align-self: center;
@@ -35,20 +60,3 @@
     }
 }
 
-.header {
-    font-size: 32px;
-    text-align: center;
-    color: #2d2d2d;
-    font-family: 'Homenaje', sans-serif;
-    @media only screen and (min-width: 768px) {
-        font-size: 50px;
-    }
-}
-
-.margin {
-    margin-top: 50px;
-}
-
-.modifier {
-    color: #fff;
-}

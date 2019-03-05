@@ -1,25 +1,25 @@
-.text {
-    font-size: 14px;
-    text-align: center;
-    color: #494949;
-    padding: 20px 0 40px 0;
-    font-family: 'Mada', sans-serif;
-    font-weight: 300;
-    @media only screen and (min-width: 768px) {
-      font-size: 18px;
-      padding: 20px 0 60px 0;
-    } 
-    @media only screen and (min-width: 1024px) {
-        font-size: 22px;
-        padding: 40px 0 100px 0;
-      }  
-}
 
 .products {
     padding: 40px 10% 100px 5%;
     @media only screen and (min-width: 768px) {
         padding: 90px 0 155px 0;
-      }  
+      } 
+    &__text {
+      font-size: 14px;
+      text-align: center;
+      color: #494949;
+      padding: 20px 0 40px 0;
+      font-family: 'Mada', sans-serif;
+      font-weight: 300;
+      @media only screen and (min-width: 768px) {
+        font-size: 18px;
+        padding: 20px 0 60px 0;
+      } 
+      @media only screen and (min-width: 1024px) {
+          font-size: 22px;
+          padding: 40px 0 100px 0;
+        }  
+    }   
     &__element {
         display: grid;
         grid-template-columns: auto 30px;
@@ -57,4 +57,17 @@
             }
         }
     }
+}
+
+
+
+.tile {
+	padding: 1rem;
+	max-height: 100px;
+	overflow: hidden;
+	transition: all 1s;
+}
+
+.expanded {
+	max-height: 300px;
 }

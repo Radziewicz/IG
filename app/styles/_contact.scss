@@ -31,6 +31,9 @@
             @media only screen and (min-width: 1024px) {
               font-size: 22px;
             }
+            &:hover {
+              color: lightgrey;
+            }
         }
     }
     &__text {
@@ -91,56 +94,47 @@
   }
 
 
- .label-a {
-    grid-area: labelA;
+ .label-a, .label-b, .label-c, .label-d {
     font-size: 16px;
     @media only screen and (min-width: 1024px) {
       font-size: 30px;
     }
+  }
+
+  .label-a {
+    grid-area: labelA;
   }
 
   .label-b {
     grid-area: labelB;
-    font-size: 16px;
-    @media only screen and (min-width: 1024px) {
-      font-size: 30px;
-    }
   }
 
   .label-c {
     grid-area: labelC;
-    font-size: 16px;
-    @media only screen and (min-width: 1024px) {
-      font-size: 30px;
-    }
   }
 
   .label-d {
     grid-area: labelD;
-    font-size: 16px;
-    @media only screen and (min-width: 1024px) {
-      font-size: 30px;
-    }
+  }
+
+  .input-a, .input-b, .input-c, .input-d {
+    justify-self: stretch;
   }
 
   .input-a {
     grid-area: inputA;
-    justify-self: stretch;
   }
 
   .input-b {
     grid-area: inputB;
-    justify-self: stretch;
   }
 
   .input-c {
     grid-area: inputC;
-    justify-self: stretch;
   }
 
   .input-d {
     grid-area: inputD;
-    justify-self: stretch;
   }
 
   .label-e {
