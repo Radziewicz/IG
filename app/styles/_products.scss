@@ -1,7 +1,8 @@
+@import '_variables';
 
 .products {
-    padding: 10px 10% 100px 5%;
-    @media only screen and (min-width: 768px) {
+    padding: 10px 0 100px 5%;
+    @include screen('tablet') {
         padding: 90px 0 155px 0;
       } 
     &__text {
@@ -9,13 +10,13 @@
       text-align: center;
       color: #494949;
       padding: 20px 0 40px 0;
-      font-family: 'Mada', sans-serif;
+      font-family: $font-family-main;
       font-weight: 300;
-      @media only screen and (min-width: 768px) {
+      @include screen('tablet') {
         font-size: 18px;
         padding: 20px 0 60px 50px;
       } 
-      @media only screen and (min-width: 1024px) {
+      @include screen('desktop') {
           font-size: 22px;
           padding: 40px 0 100px 0;
         }  
@@ -29,13 +30,13 @@
             grid-template-columns: 1fr 1fr;
             grid-row-gap: 80px;
             grid-column-gap: 60px;
-            @media only screen and (min-width: 768px) {
+            @include screen('tablet') {
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-row-gap: 90px;  
                 grid-column-gap: 80px;
                 max-width: 500px;
               } 
-            @media only screen and (min-width: 1024px) {
+              @include screen('desktop') {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-row-gap: 90px;  
                 grid-column-gap: 80px;
@@ -48,15 +49,13 @@
                 max-height: 80px;
                 padding: 10px;
                 &:hover {
-                  background-color: #62c017;
-                  fill: #fff;
+                  background-color: $color-accent;
+                  fill: $color-light;
                 }
-                @media only screen and (min-width: 768px) {
+                @include screen('tablet') {
                   max-width: 120px;
                   max-height: 120px;
                 } 
-                @media only screen and (min-width: 1024px) {
-                  }  
             }
         }
     }
@@ -71,27 +70,27 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #62c017;
+  background-color: $color-accent;
   z-index: 1;
   width: 100px;
   margin-top: -7px;
   text-align: left;
-  @media only screen and (min-width: 768px) {
+  @include screen('tablet') {
     width: 140px;
   } 
   &__text {
     padding: 10% 7%;
     font-size: 10px;
-    color: #fff;
-    font-family: 'Mada', sans-serif;
+    color: $color-light;
+    font-family: $font-family-main;
     font-weight: 300;
-    @media only screen and (min-width: 768px) {
+    @include screen('tablet') {
       font-size: 14px;
     } 
   }
 }
 
 
-.dropdown-content a:hover {background-color: #62c017}
+.dropdown-content a:hover {background-color: $color-accent}
 
 .dropdown:hover .dropdown-content {display: block;}

@@ -1,3 +1,5 @@
+@import '_variables';
+
 .clients {
     background: url("../images/trianglify.jpg") 0 0 no-repeat;
     background-position: center;
@@ -5,7 +7,7 @@
     padding: 0 0 70px 0;
     display: grid;
     align-items: center;
-    @media only screen and (min-width: 768px) {
+    @include screen('tablet') {
         padding: 120px 0 160px 0;
         height: auto;
     }
@@ -15,11 +17,11 @@
     position: relative;
     margin: auto;
     padding: 0 10% 0 5%;
-    @media only screen and (min-width: 768px) {
+    @include screen('tablet') {
       padding: 0;
       max-width:630px;
     }
-    @media only screen and (min-width: 1024px) {
+    @include screen('desktop') {
       max-width: 930px;
     }
   }
@@ -32,14 +34,14 @@
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    @media only screen and (min-width: 768px) {
+    @include screen('tablet') {
       height: 15px;
       width: 15px;
     }
   }
   
   .active {
-    background-color: #fff;
+    background-color: $color-light;
   }
   
   .fade {
@@ -64,17 +66,25 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    @media only screen and (min-width: 768px) {
+    @include screen('tablet') {
       grid-template-columns: 200px auto;
     }
-    @media only screen and (min-width: 1024px) {
-      grid-template-columns: 350px auto;
+    @include screen('desktop') {
+      grid-template-columns: 400px auto;
     }
     &__img {
       padding-top: 20px;
       padding-right: 10%;
       margin-bottom: -20px;
-      @media only screen and (min-width: 768px) {
+      img {
+        max-width: 200px;
+        height: auto;
+        @include screen('desktop') {
+          max-width: 350px;
+          height: auto;
+        }
+      }
+      @include screen('tablet') {
         padding-right: 0;
         margin-top: 30px;
       }
@@ -83,41 +93,41 @@
       display: grid;
       grid-template-columns: 20px auto;
       grid-column-gap: 10px;
-      @media only screen and (min-width: 768px) {
+      @include screen('tablet') {
         grid-column-gap: 20px;
       }
       &__text {
         color: #3c3c3c;
-        font-family: 'Mada', sans-serif;
+        font-family: $font-family-main;
         margin-top: 50px;
         font-size: 16px;
         padding-bottom: 25px;
         align-items: center;
         line-height: 1.2;
-        @media only screen and (min-width: 768px) {
+        @include screen('tablet') {
           padding-right: 10%;
           font-size: 20px;
         }
-        @media only screen and (min-width: 1024px) {
+        @include screen('desktop') {
           font-size: 30px;
         }
         &__mail {
-          font-family: 'Mada', sans-serif;
+          font-family: $font-family-main;
           font-weight: 300;
           font-size: 16px;
           padding-bottom: 20px;
           color: #3c3c3c;
-          @media only screen and (min-width: 1024px) {
+          @include screen('desktop') {
             font-size: 22px;
             padding-bottom: 35px;
           }     
           a {
-            font-family: 'Mada', sans-serif;
+            font-family: $font-family-main;
             font-weight: 300;
-            color: #fff;
+            color: $color-light;
             text-decoration: underline;
             font-size: 16px;
-            @media only screen and (min-width: 768px) {
+            @include screen('tablet') {
               font-size: 22px;
             }
             &:hover {
@@ -128,17 +138,17 @@
         }
       }
       &__btn {
-        font-family: 'Mada', sans-serif;
+        font-family: $font-family-main;
         font-weight: 300;
-        color: #fff;
+        color: $color-light;
         background-color: transparent;
         text-decoration: none;
         font-size: 12px;
         padding: 4px 8px;
-        border: 1px solid #fff;
+        border: 1px solid $color-light;
         text-align: center;
         width: 70px;
-        @media only screen and (min-width: 1024px) {
+        @include screen('desktop') {
           font-size: 15px;
         }
         &:hover {

@@ -1,8 +1,8 @@
-
+@import '_variables';
 
 .mission {
     padding: 0 0 40px 5%;
-    @media only screen and (min-width: 768px) {
+    @include screen('tablet') {
         padding: 80px 0 160px 5%;
     }
     &__element {
@@ -12,26 +12,24 @@
         grid-column-gap: 10px;
         justify-content: space-between;
         width: 100%;
-        @media only screen and (min-width: 1024px) {
+        @include screen('desktop') {
             grid-column-gap: 0;
-        }
-        @media only screen and (min-width: 1024px) {
             grid-template-columns: 0.2fr 1fr 0.2fr;
         }
         &__text {
-            font-family: 'Mada', sans-serif;
+            font-family: $font-family-main;
             font-weight: 300;
             justify-self: center;
             font-size: 12px;
             line-height: 2;
             color: #565656;
             padding-top: 20px;
-            @media only screen and (min-width: 768px) {
+            @include screen('tablet') {
                 font-size: 18px;
                 padding: 0 5%;
                 padding-top: 30px;
             }
-            @media only screen and (min-width: 1024px) {
+            @include screen('desktop') {
                 font-size: 22px;
             }
         }

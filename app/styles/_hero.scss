@@ -1,3 +1,5 @@
+@import '_variables';
+
 .background-top {
     background: url("../images/bg.jpg") 0 0 no-repeat;
     background-position: center;
@@ -10,7 +12,7 @@
     align-content: center;
     text-align: center;
     height: 100vh;
-    font-family: 'Homenaje', sans-serif;
+    font-family: $font-family-header;
     font-weight: regular;
   }
 
@@ -20,10 +22,10 @@
       font-size: 38px;
       text-transform: uppercase;
       font-weight: light;
-      @media only screen and (min-width: 768px) {
+      @include screen('tablet') {
         font-size: 58px;
     }
     &__accent {
-      color: #fff;
+      color: $color-light;
     }
   }

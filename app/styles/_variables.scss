@@ -1,0 +1,26 @@
+$color-light: #fff;
+$color-dark: #000;
+$color-accent: #62c017;
+
+$font-family-header: 'Homenaje', sans-serif;
+$font-family-main: 'Mada', sans-serif;
+
+@mixin screen($size) {
+    $desktop: "(min-width: 1024px)";
+    $tablet: "(min-width: 768px)";
+    @if $size == desktop {
+      @media only screen and #{$desktop} {
+        @content;
+      }
+    }
+    @else if $size == tablet {
+      @media only screen and #{$tablet} {
+        @content;
+      }
+    }
+    @else {
+      @media only screen and #{$size} {
+        @content;
+      }
+    }
+  }

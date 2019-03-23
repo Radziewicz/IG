@@ -1,13 +1,14 @@
+@import '_variables';
 
 .quote {
     max-width: 15px;
     height: auto;
     justify-self: end;
     margin-top: 20px;
-    @media only screen and (min-width: 768px) {
+    @include screen('tablet') {
         max-width: 25px;
     }
-    @media only screen and (min-width: 1024px) {
+    @include screen('desktop') {
         max-width: 35px;
         margin-top: 25px;
     }
@@ -22,12 +23,12 @@
     color: #2d2d2d;
     font-family: 'Homenaje', sans-serif;
     padding-top: 40px;
-    @media only screen and (min-width: 768px) {
+    @include screen('tablet') {
         font-size: 50px;
         padding-top: 0;
     }
     &--modifier {
-        color: #fff;
+        color: $color-light;
     }
     &--contact {
         padding-top: 0;
@@ -45,12 +46,12 @@
     margin-top: -120%;
     font-family: 'Homenaje', sans-serif;
     font-weight: 400;
-    @media only screen and (min-width: 768px) {
+    @include screen('tablet') {
         margin-top: -50%;
         font-size: 19px;
         height: 50px;  
     }
-    h6:after  {
+    h4:after  {
         content: '';
         background-color: #626262;
         display: block;
@@ -58,17 +59,17 @@
         margin-top: 10px;
         margin-bottom: 0;
         width: 30px;
-        @media only screen and (min-width: 768px) {
+        @include screen('tablet') {
             margin-top: 30px;
             width: 100px;
         }
       }
 }
 .position--modifier {
-    color: #fff;
+    color: $color-light;
     align-items: center;
-    h6:after {
-        background-color: #fff;
+    h4:after {
+        background-color: $color-light;
     }
 }
 
@@ -79,7 +80,7 @@
 .position--contact {
     margin-top: 65px;
     align-self: start;
-    @media only screen and (min-width: 768px) {
+    @include screen('tablet') {
         margin: 0;
         align-self: start;
     }
@@ -100,7 +101,7 @@
     -webkit-transform: translate(-50%, 0%) rotate(225deg);
     -moz-transform: translate(-50%, 0%) rotate(225deg);
     transform: translate(-50%, 0%) rotate(225deg);
-    @media only screen and (min-width: 768px) {
+    @include screen('tablet') {
         width: 30px;
         height: 30px;
         bottom: 80px;
@@ -108,14 +109,14 @@
     }
     &:after {
         content: '';
-        background-color: #000;
+        background-color: $color-dark;
         display: block;
         height: 1px;
         width: 35px;
         -webkit-transform: translate(-50%, 0%) rotate(-45deg);
         -moz-transform: translate(-50%, 0%) rotate(-45deg);
         transform: translate(-50%, 0%) rotate(-45deg);
-        @media only screen and (min-width: 768px) {
+        @include screen('tablet') {
             width: 105px;
         }
     }
@@ -137,7 +138,7 @@
     -webkit-transform: translate(-50%, 0%) rotate(45deg);
     -moz-transform: translate(-50%, 0%) rotate(45deg);
     transform: translate(-50%, 0%) rotate(45deg);
-    @media only screen and (min-width: 768px) {
+    @include screen('tablet') {
         width: 30px;
         height: 30px;
         bottom: 30px;
